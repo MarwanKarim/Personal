@@ -1,0 +1,148 @@
+@font-face {
+    font-family: 'nrt-regular';
+    src: url('../fonts/Chawder-Reg.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'nrt-bold';
+    src: url('../fonts/Chawder-Bold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'sarchia-makka';
+    src: url('../fonts/60_Sarchia_Makka.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
+page {
+    font-family: nrt-regular;
+    background: linear-gradient(to bottom right,#87CEEB 0%,#daebf2 20%,white 40%,white 100%);
+    padding-right: 4rem;
+    padding-left:2rem;
+    padding-top: 3rem;
+}
+
+#name {
+    font-size: 3.5rem;
+}
+
+#profession {
+    font-size: 1.6rem;
+}
+
+.content{
+    margin-top:2rem;
+}
+
+.details-box {
+    padding: 1rem !important;
+    background-color: #f0eded;
+    margin-bottom: 1rem;
+}
+
+    .details-box h4 {
+        margin-bottom: 2rem !important;
+        font-size: 1.7rem;
+    }
+
+    .details-box .detail-duo {
+        margin-bottom: 0.5rem;
+        width: 49%;
+        display: inline-block
+    }
+
+        .details-box .detail-duo label {
+            font-size: 0.9rem;
+        }
+
+        .details-box .detail-duo div {
+            font-size: 1.1rem;
+            font-weight: bold;
+        }
+
+    .details-box .language-line label {
+        width: 30%;
+        display: inline-block;
+    }
+
+    .details-box .language-line .percent-bar {
+        width: 60%;
+        display: inline-block;
+        margin-left: auto;
+        margin-right: auto;
+        height: 7px;
+    }
+
+        .details-box .language-line .percent-bar.percent-bar-100 {
+            background: linear-gradient(to left,deepskyblue 0%,deepskyblue 19%,transparent 19%,transparent 21%,deepskyblue 21%, deepskyblue 39%,transparent 39%,transparent 41%,deepskyblue 41%, deepskyblue 59%,transparent 59%,transparent 61%,deepskyblue 61%, deepskyblue 79%,transparent 79%,transparent 81%,deepskyblue 81%);
+        }
+
+        .details-box .language-line .percent-bar.percent-bar-80 {
+            background: linear-gradient(to left,deepskyblue 0%,deepskyblue 19%,transparent 19%,transparent 21%,deepskyblue 21%, deepskyblue 39%,transparent 39%,transparent 41%,deepskyblue 41%, deepskyblue 59%,transparent 59%,transparent 61%,deepskyblue 61%, deepskyblue 79%,transparent 79%,transparent 81%,darkgray 81%);
+        }
+
+.section{
+    margin-bottom:1.3rem;
+}
+
+.section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1.4rem;
+}
+
+    .section .element {
+        margin-bottom: 15px;
+    }
+
+.section .element .timeline {
+    font-family:sarchia-makka;
+    font-weight: bold;
+    font-size: 1.3rem;
+    /*direction:ltr;*/
+    text-align:right;
+}
+
+.section .element .title{
+    font-weight:bold;
+    font-size:1.1rem;
+}
+
+.section .element .subtitle{
+
+}
+
+.section .element .details {
+    font-size:0.9rem;
+}
+
+
+@media print{
+
+    page {
+        background: linear-gradient(to bottom right,#87CEEB 0%,#daebf2 20%,white 40%,white 100%);
+    }
+
+    .details-box .language-line .percent-bar.percent-bar-100 {
+        background: linear-gradient(to left,deepskyblue 0%,deepskyblue 19%,transparent 19%,transparent 21%,deepskyblue 21%, deepskyblue 39%,transparent 39%,transparent 41%,deepskyblue 41%, deepskyblue 59%,transparent 59%,transparent 61%,deepskyblue 61%, deepskyblue 79%,transparent 79%,transparent 81%,deepskyblue 81%);
+    }
+
+    .details-box .language-line .percent-bar.percent-bar-80 {
+        background: linear-gradient(to left,deepskyblue 0%,deepskyblue 19%,transparent 19%,transparent 21%,deepskyblue 21%, deepskyblue 39%,transparent 39%,transparent 41%,deepskyblue 41%, deepskyblue 59%,transparent 59%,transparent 61%,deepskyblue 61%, deepskyblue 79%,transparent 79%,transparent 81%,darkgray 81%);
+    }
+
+    .details-box {
+        background-color: #f0eded;
+    }
+
+}
+
+.section h2, .details-box h4{
+    color:deepskyblue;
+}
